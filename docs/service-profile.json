@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "document_type": "informational-service-proposal",
+  "name": "Agent-native Accounting",
+  "name_status": "working-descriptive-title-not-company-or-mark-clearance",
+  "status": "planned",
+  "as_of": "2026-10-05",
+  "jurisdiction": "New Zealand",
+  "accepting_clients": false,
+  "accepting_records": false,
+  "offering_filings": false,
+  "intended_initial_customer": "Straightforward NZ sole-trader service business with clean existing Xero records",
+  "intended_service_scope": [
+    "Annual accounts and income-tax preparation",
+    "GST preparation",
+    "Plain-language financial analysis"
+  ],
+  "initial_exclusions": [
+    "Payroll and inventory",
+    "Trusts and complex entities",
+    "Cross-border affairs and multiple currencies",
+    "Arrears, disputes and insolvency",
+    "Audit and assurance",
+    "Financial-product advice",
+    "Holding client money, bank payments and autonomous filing"
+  ],
+  "requires-human-authorization": true,
+  "required_review": "Named competent human accountant; operator and permissions not yet confirmed",
+  "intended_access_paths": ["customer-owned compatible agent", "optional client-side supplied agent", "human channel"],
+  "portability": "Intended; export, revocation, hosting and retention terms require confirmation",
+  "ledger_starting_point": "Xero intended; no tested integration or partnership claimed",
+  "price": null,
+  "operator": null,
+  "contact": null,
+  "endpoints": null,
+  "binding_offer": false,
+  "notice": "Informational proposal only. No records, instructions or filings are accepted. Permission to coordinate is not permission to sign, amend records, pay or file."
+}
