@@ -1,38 +1,55 @@
 {
-  "schema_version": "1.0",
-  "document_type": "informational-service-proposal",
+  "schema_version": "1.1",
+  "document_type": "nontransactional-service-design-preview",
   "name": "Agent-native Accounting",
-  "name_status": "working-descriptive-title-not-company-or-mark-clearance",
-  "status": "planned",
-  "as_of": "2026-10-05",
+  "name_status": "descriptive-title-not-registration-or-accreditation",
+  "status": "preview",
+  "as_of": "2026-10-06",
   "jurisdiction": "New Zealand",
+  "accepts_clients": false,
   "accepting_clients": false,
   "accepting_records": false,
   "offering_filings": false,
-  "intended_initial_customer": "Straightforward NZ sole-trader service business with clean existing Xero records",
-  "intended_service_scope": [
-    "Annual accounts and income-tax preparation",
-    "GST preparation",
-    "Plain-language financial analysis"
-  ],
-  "initial_exclusions": [
-    "Payroll and inventory",
-    "Trusts and complex entities",
-    "Cross-border affairs and multiple currencies",
-    "Arrears, disputes and insolvency",
-    "Audit and assurance",
-    "Financial-product advice",
-    "Holding client money, bank payments and autonomous filing"
-  ],
-  "requires-human-authorization": true,
-  "required_review": "Named competent human accountant; operator and permissions not yet confirmed",
-  "intended_access_paths": ["customer-owned compatible agent", "optional client-side supplied agent", "human channel"],
-  "portability": "Intended; export, revocation, hosting and retention terms require confirmation",
-  "ledger_starting_point": "Xero intended; no tested integration or partnership claimed",
-  "price": null,
+  "customer_scope": "Straightforward NZ sole-trader service businesses with clean books; Business uses existing Xero and two-monthly GST",
+  "pricing": {
+    "status": "illustrative-review-tariff-not-binding-offer",
+    "currency": "NZD",
+    "gst_included": false,
+    "setup_once": 500,
+    "xero": "Separately billed at actual selected plan",
+    "term": "Annual service, paid in 12 monthly instalments; annual scope and renewal review; early end requires work/fee reconciliation",
+    "packages": [
+      {
+        "id": "year-end",
+        "name": "Year-end",
+        "monthly": 99,
+        "annual_service": 1188,
+        "first_year_including_setup": 1688,
+        "scope": "Clean, non-GST NZ sole-trader books",
+        "includes": ["Annual accounts", "Annual IR3 preparation", "Human accountant review", "Plain-English year-end explanation"]
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "monthly": 249,
+        "annual_service": 2988,
+        "first_year_including_setup": 3488,
+        "scope": "Clean NZ sole-trader Xero books with two-monthly GST",
+        "includes": ["Up to 6 GST workpacks/year", "Annual accounts and IR3 preparation", "Human review of every workpack", "Plain-English year-end explanation", "Up to 6 short routine async clarification threads/year"]
+      }
+    ],
+    "always_included": ["Required review", "Necessary review clarification and corrections", "Human complaints route"],
+    "separately_scoped": ["Optional supplied client-side agent", "Human advisory work"]
+  },
+  "exclusions": ["Bookkeeping cleanup", "Payroll", "Companies and trusts", "Inventory", "Foreign affairs and multiple currencies", "Overdue returns, disputes and insolvency", "Complex advice", "Audit and assurance", "Financial-product advice", "Holding money, bank payments and autonomous filing"],
+  "access_paths": ["Customer-owned compatible agent", "Optional client-side supplied agent", "Direct human channel"],
+  "required_review": "Human accountant review included in every package; no appointed operator or professional credentials asserted by this preview",
+  "requires_human_authorization": true,
+  "portability": "Customer retains ledger ownership and representative choice; revoke access and change provider",
+  "integration_status": "No live Xero or agent API integration is claimed",
   "operator": null,
   "contact": null,
   "endpoints": null,
   "binding_offer": false,
-  "notice": "Informational proposal only. No records, instructions or filings are accepted. Permission to coordinate is not permission to sign, amend records, pay or file."
+  "notice": "Service design preview only. No bookings, client records, payments or filings are accepted. Local page interactions do not start a service. Coordination is not authority to sign, amend records, pay or file."
 }

@@ -9,7 +9,7 @@ Maintainers must resolve the current canonical working-policy catalogue in `drea
 ## Public-content boundary
 
 - `docs/` contains the complete no-build GitHub Pages site. Keep HTML, CSS and JSON self-contained, accessible and usable under a project URL.
-- Preserve truthful planned-service status until the actual operator authorises an evidenced update. Never invent team, accreditation, insurance, integrations, prices or client results.
+- The owner's service-preview commission authorises confident service-design copy and the specific illustrative review tariffs in the profile (Year-end NZ$99/month, Business NZ$249/month, NZ$500 setup, excluding GST and Xero). Preserve one prominent preview notice and matching footer, with machine status `preview`, `accepts_clients: false` and null contact/endpoints. These sample tariffs are not binding offers or operational acceptance. Never invent team, accreditation, insurance, live integrations or client results; do not introduce other prices without authority.
 - Do not add confidential conversations, client records, private analysis, credentials, forms, payments, logins or service endpoints to this repository or its history.
 - The machine-readable profile is a proposal, not an operational API contract or evidence of authority.
 - Inspect current ownership and exact diffs before editing. Verify public assets and live delivery after publication. Do not change other repositories' visibility.
